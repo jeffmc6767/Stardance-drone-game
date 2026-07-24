@@ -4,80 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Drone Delivery Simulator</title>
-
     <link rel="stylesheet" href="style.css">
 
-    <!-- Three.js -->
     <script async src="https://unpkg.com/es-module-shims@1.10.0/dist/es-module-shims.js"></script>
-
     <script type="importmap">
-{
-    "imports": {
-        "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
-        "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+        }
     }
-}
-</script>
-
+    </script>
 </head>
 
 <body>
 
 <div id="loading">
-
     <h1>Drone Delivery Simulator</h1>
-
     <p>Loading World...</p>
-
 </div>
 
 <div id="hud">
-
     <div class="panel">
-
         <h2>DRONE</h2>
-
-        <div>Battery <span id="battery">100%</span></div>
-
-        <div>Altitude <span id="altitude">0m</span></div>
-
-        <div>Speed <span id="speed">0 km/h</span></div>
-
+        <div>Battery: <span id="battery">100%</span></div>
+        <div>Altitude: <span id="altitude">0m</span></div>
+        <div>Speed: <span id="speed">0 km/h</span></div>
     </div>
 
     <div class="panel">
-
         <h2>MISSION</h2>
-
-        <div>Packages <span id="packages">0</span></div>
-
-        <div>Money <span id="money">$0</span></div>
-
-        <div>Target <span id="target">None</span></div>     
+        <div>Packages: <span id="packages">0</span></div>
+        <div>Money: <span id="money">$0</span></div>
+        <div>Target: <span id="target">Pickup Point</span></div>
+        <div>Distance: <span id="distance">0m</span></div>
     </div>
+</div>
 
+<div id="minimap">
+    <canvas id="minimapCanvas" width="150" height="150"></canvas>
 </div>
 
 <div id="crosshair"></div>
 
 <div id="controls">
-
     <h2>Controls</h2>
-
-    <p>W A S D - Fly</p>
-
-    <p>SPACE - Up</p>
-
-    <p>SHIFT - Down</p>
-
-    <p>Mouse - Look Around</p>
-
+    <p>W / S or Up / Down - Pitch Forward / Back</p>
+    <p>A / D or Left / Right - Turn Left / Right</p>
+    <p>SPACE - Ascend</p>
+    <p>SHIFT - Descend</p>
+    <p>Mouse - Pitch Camera</p>
 </div>
 
 <script type="module" src="script.js"></script>
 
 </body>
-
 </html>
