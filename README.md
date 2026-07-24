@@ -8,3 +8,11 @@ Heres an image:
 The goal of the game is to fly around the map and collect packages. After collecting them you have to fly to a drop off zone. Every pick up and drop off you earn money. 
 
 Thats basically it maybe in the future I will add more features and make it a lot more fun. 
+
+Heres how to play
+- 
+1. To move around, use WASD. W = forward, S = Backwards  A and D = Rotation left and right.
+2. You can use your mouse/cursor to move around but its a bit glitch
+3. Use the little line on the radar(bottom right) to point yourself toward the target and fly there.
+
+Thats it have fun!
